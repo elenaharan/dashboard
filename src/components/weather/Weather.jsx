@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./Weather.css";
 
 
 let apiURL = "https://api.openweathermap.org/data/2.5/weather";
