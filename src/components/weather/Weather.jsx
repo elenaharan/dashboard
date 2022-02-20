@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Weather.css";
 
-
 let apiURL = "https://api.openweathermap.org/data/2.5/weather";
 let apiKey = "2edf986d7f5b857dbfc312ad5cfd9033";
 let city = "London";
@@ -13,10 +12,9 @@ function Weather() {
         fetch(api).then(response => response.json()).then(data => {
           setWeather(data);
         })
-    }, []); // [] unless the data changes, do not rerender
-  return (
-    <>
-    
+    }, []);
+
+  return (    
     <div className="box">
       <h2 className="box-title">Weather</h2>
       <div className="temp-container">
@@ -28,9 +26,6 @@ function Weather() {
       </div>
       {weather && <span className="city">{weather.name}</span>}
     </div>
-    
-    </>
-    
   );
 }
 
