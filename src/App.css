@@ -1,1 +1,4 @@
-
+main {
+  padding: 127px;
+  background: url("./components/images/Background.png") no-repeat center;
+}
