@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Weather.css";
 
 let apiURL = "https://api.openweathermap.org/data/2.5/weather";
-let apiKey = "2edf986d7f5b857dbfc312ad5cfd9033";
+const apiKey = process.env.REACT_APP_WEATHER_API_KEY
 let city = "London";
 
 function Weather() {
