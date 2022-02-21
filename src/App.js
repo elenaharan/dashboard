@@ -1,13 +1,17 @@
 import './App.css';
 import Title from './components/Title/Title';
 import Dashboard from './components/Dashboard/Dashboard';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <main>
-      <Title name='Elena' />
-      <Dashboard />
-    </main>
+    <div className="app">
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Dashboard />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
