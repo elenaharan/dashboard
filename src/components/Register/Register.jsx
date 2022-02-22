@@ -27,7 +27,7 @@ function Register() {
           className="register__textBox"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          placeholder="Full Name"
+          placeholder="Username"
         />
         <input
           type="text"

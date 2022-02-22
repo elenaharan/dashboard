@@ -13,7 +13,7 @@ const Dashboard = () => {
     if (!user) return navigate("/");
   }, [user]);
   return (
-    <>
+    <main>
       <Weather />
       <div className='box'>
           <h2 className='box-title'>News</h2>
@@ -22,7 +22,7 @@ const Dashboard = () => {
       <button className="dashboard__btn" onClick={logout}>
           Logout
       </button>
-    </>
+    </main>
   )
 }
 
