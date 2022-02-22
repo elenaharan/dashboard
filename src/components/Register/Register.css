@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background: url("../images/Background.png") no-repeat center;
 }
 .register__container {
   display: flex;
